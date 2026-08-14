@@ -1,0 +1,26 @@
+services:
+  dds-nodex:
+    build: .
+    image: dds-nodex:prod
+    container_name: dds-nodex
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      SYNC_INTERVAL_MINUTES: ${SYNC_INTERVAL_MINUTES:-1}
+      REQUEST_TIMEOUT: ${REQUEST_TIMEOUT:-10}
+      DATA_DIR: /app/data
+      DB_FILE: /app/data/traffic_state.db
+      ENABLE_FILE_LOG: ${ENABLE_FILE_LOG:-0}
+      CONFIG_FILE: /app/config/config.json
+      HEALTH_MAX_AGE: ${HEALTH_MAX_AGE:-180}
+    volumes:
+      - /var/lib/dds-nodex/data:/app/data
+      - /var/lib/dds-nodex/config:/app/config:ro
+    read_only: true
+    tmpfs: [ "/tmp" ]
+    security_opt: [ "no-new-privileges:true" ]
+    cap_drop: [ "ALL" ]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

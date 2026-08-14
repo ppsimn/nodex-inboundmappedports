@@ -1,0 +1,11 @@
+.git
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.db
+data/
+config/
+.vscode/
+.idea/
+.DS_Store

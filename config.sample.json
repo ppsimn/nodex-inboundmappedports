@@ -1,0 +1,22 @@
+{
+  "central_server": {
+    "url": "http://host.docker.internal:PORT/WEBPATH",
+    "api_port": 2053,
+    "username": "central_username",
+    "password": "central_password"
+  },
+  "nodes": [
+    {
+      "url": "http://IP:PORT/WEBPATH",
+      "api_port": 2054,
+      "username": "node_username",
+      "password": "node_password",
+      "inbound_mappings": [
+        {
+          "central_port": 8080,
+          "node_port": 8081
+        }
+      ]
+    }
+  ]
+}
