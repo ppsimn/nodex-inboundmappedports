@@ -489,7 +489,6 @@ class SyncManager:
     def _fetch_node_traffic_parallel(self, nodes_by_key, node_sessions, email):
         """Parallelize traffic reads (I/O-bound only). Writes remain serial."""
         # NEW: Query the node using the suffixed email
-        node_email = f"{email}{node.get('email_suffix', '')}" if node.get('email_suffix') else email
         currents_by_server = {}
         futures = {}
         max_workers = min(len(node_sessions), self.config_manager.net().get('max_workers', 8))
@@ -501,6 +500,7 @@ class SyncManager:
                 node = nodes_by_key.get(srv_key)
                 if not node or not sess:
                     continue
+                node_email = f"{email}{node.get('email_suffix', '')}" if node.get('email_suffix') else email
                 # futures[ex.submit(self.api_manager.get_client_traffic, node, sess, email)] = srv_key
                 futures[ex.submit(self.api_manager.get_client_traffic, node, sess, node_email)] = srv_key
 
