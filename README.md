@@ -1,4 +1,3 @@
-this is a modiefied version of (https://github.com/azavaxhuman/Nodex) with openai codex
 # Nodex - Unofficial version of the 3X-ui Node
 
 <p align="center">
@@ -202,7 +201,7 @@ services:
 </div>
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ppsimn/nodex-inboundmappedports/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -sSL https://raw.githubusercontent.com/azavaxhuman/Nodex/refs/heads/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 #### پس از اجرا شما هر بار میتوانید با دستور dds-nodex منو را فراخوانی کنید.
@@ -210,7 +209,12 @@ curl -sSL https://raw.githubusercontent.com/ppsimn/nodex-inboundmappedports/main
 ## ❤️ حمایت مالی (Donate)
 
 اگر Nodex برای شما مفید بود، می‌توانید از پروژه حمایت کنید:
-https://github.com/azavaxhuman/Nodex
+
+| Cryptocurrency    | Wallet Address                             |
+| ----------------- | ------------------------------------------ |
+| USDT (BEP20)      | 0xFA231ce9128AC097F70F5efcfFb3d918645e1Ca9 |
+| DogeCoin (DOGE)   | DRXjceAoxBRzNsNgVR3GduPSau4xiv179y         |
+| TRON (TRX-TRC20 ) | TJWnK1fCcxwsemyYgYjebKnsBfofCFy3Pc         |
 
 ## 🧠 نحوهٔ کار (High-level)
 

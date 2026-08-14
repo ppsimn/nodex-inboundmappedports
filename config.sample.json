@@ -11,6 +11,7 @@
       "api_port": 2054,
       "username": "node_username",
       "password": "node_password",
+      "email_suffix": "_node1",
       "inbound_mappings": [
         {
           "central_port": 8080,

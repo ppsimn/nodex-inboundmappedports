@@ -4,7 +4,7 @@ set -Eeuo pipefail
 IFS=$'\n\t'
 
 # ==================== Defaults ====================
-readonly ZIP_URL_DEFAULT="${ZIP_URL:-https://github.com/ppsimn/nodex-inboundmappedports/releases/download/tag1/nodex-mapped-inbounds-v1.4-1.zip}"
+readonly ZIP_URL_DEFAULT="${ZIP_URL:-https://github.com/ppsimn/nodex-inboundmappedports/releases/download/tag1/nodex-mapped-inbounds-v1.4-2.zip}"
 readonly APP_HOME_DEFAULT="${APP_HOME:-/opt/dds-nodex}"
 readonly DATA_DIR_DEFAULT="${DATA_DIR:-/var/lib/dds-nodex/data}"
 readonly CONFIG_DIR_DEFAULT="${CONFIG_DIR:-/var/lib/dds-nodex/config}"
