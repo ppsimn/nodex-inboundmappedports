@@ -1,3 +1,4 @@
+this is a modiefied version of (https://github.com/azavaxhuman/Nodex) with openai codex
 # Nodex - Unofficial version of the 3X-ui Node
 
 <p align="center">
@@ -209,12 +210,7 @@ curl -sSL https://raw.githubusercontent.com/azavaxhuman/Nodex/refs/heads/main/in
 ## ❤️ حمایت مالی (Donate)
 
 اگر Nodex برای شما مفید بود، می‌توانید از پروژه حمایت کنید:
-
-| Cryptocurrency    | Wallet Address                             |
-| ----------------- | ------------------------------------------ |
-| USDT (BEP20)      | 0xFA231ce9128AC097F70F5efcfFb3d918645e1Ca9 |
-| DogeCoin (DOGE)   | DRXjceAoxBRzNsNgVR3GduPSau4xiv179y         |
-| TRON (TRX-TRC20 ) | TJWnK1fCcxwsemyYgYjebKnsBfofCFy3Pc         |
+https://github.com/azavaxhuman/Nodex
 
 ## 🧠 نحوهٔ کار (High-level)
 
